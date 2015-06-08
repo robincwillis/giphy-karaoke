@@ -15,11 +15,11 @@ The app reads objects from the `lyrics.js` file. The structure of each object is
 
 ```json
 	{
-		text : "Every now and then I get a little bit tired",
-		start : 17,
-		end : 20,
-		state : 'waiting',
-		sequence : 'verse',
+		"text" : "Every now and then I get a little bit tired",
+		"start" : 17,
+		"end" : 20,
+		"state" : "waiting",
+		"sequence" : "verse",
 	}
 ```
 
@@ -29,24 +29,24 @@ Optionally if you would like to adjust the timing of progress within the text it
 
 ```json
 {
-	text : "Every now and then I get a little bit lonely",
+	"text" : "Every now and then I get a little bit lonely",
 	//...
-	steps : [
+	"steps" : [
 						{
-							at : 0,
-							pos : 0
+							"at" : 0,
+							"pos" : 0
 						},
 						{
-							at :  50,
-							pos : 20
+							"at" :  50,
+							"pos" : 20
 						},
 						{
-							at : 	65,
-							pos : 85
+							"at" : 	65,
+							"pos" : 85
 						},
 						{
-							at : 100,
-							pos : 100
+							"at" : 100,
+							"pos" : 100
 						}
 				]
 }
@@ -62,14 +62,14 @@ The app queries the random endpoint of Giphy's [API](https://api.giphy.com/) and
 
 ```json
 var sequences = [
-	{ key : "verse",
-		query : ["80s", "hair", "tears", "drama", "sad"]
+	{ "key" : "verse",
+		"query" : ["80s", "hair", "tears", "drama", "sad"]
 	},
-	{ key : "chorus",
-		query : ["dance", "joy", "beauty", "retro"]
+	{ "key" : "chorus",
+		"query" : ["dance", "joy", "beauty", "retro"]
 	},
-	{ key : "bridge",
-		query : ["timelapse", "death", "breakdown", "lightning"]
+	{ "key" : "bridge",
+		"query" : ["timelapse", "death", "breakdown", "lightning"]
 	}
 ];
 ```
